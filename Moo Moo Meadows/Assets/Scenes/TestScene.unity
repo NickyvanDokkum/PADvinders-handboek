@@ -242,7 +242,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 122846313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 9
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &122846313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,7 +473,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 184959655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: forward 4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &184959655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,7 +678,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 231807946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: back 4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &231807946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +883,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 288490899}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &288490899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,7 +1011,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 371584108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: back 1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &371584108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2179,7 +2234,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 844568233}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &844568233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2296,7 +2362,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 845124833}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: forward 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &845124833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2490,7 +2567,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 925840942}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 6
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &925840942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2761,7 +2849,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1040323553}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 12
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1040323553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3347,7 +3446,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1349065761}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1349065761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3464,7 +3574,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1393878806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: forward 3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1393878806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3618,7 +3739,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1464275124}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: back 3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1464275124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4190,7 +4322,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1638472699}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 7
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1638472699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4307,7 +4450,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646064276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646064276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4424,7 +4578,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1664816794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: back 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1664816794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4726,7 +4891,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1742469181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 10
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1742469181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4920,7 +5096,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1863998658}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 5
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1863998658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5166,7 +5353,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865430602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 8
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1865430602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5360,7 +5558,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2013640771}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: forward 1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2013640771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5595,7 +5804,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2111852853}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: DebugLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: day 11
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2111852853
 MonoBehaviour:
   m_ObjectHideFlags: 0
