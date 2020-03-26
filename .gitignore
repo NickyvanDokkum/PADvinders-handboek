@@ -316,3 +316,13 @@ UnityExtension/**/manifest.json
 tests/IntegrationTests/IOTestsRepo/
 Moo Moo Meadows/Library/CurrentLayout-default.dwlt
 Moo Moo Meadows/Library/CurrentLayout-default.dwlt
+Moo Moo Meadows/Assembly-CSharp.csproj
+*.cache
+*.cache
+*.sln
+*.json
+Moo Moo Meadows/Library/SpriteAtlasDatabase.asset
+Moo Moo Meadows/Library/SourceAssetDB
+*.dll
+*.asset
+Moo Moo Meadows/Library/SourceAssetDB
