@@ -314,3 +314,5 @@ sysinfo.txt
 *.unitypackage
 UnityExtension/**/manifest.json
 tests/IntegrationTests/IOTestsRepo/
+Moo Moo Meadows/Library/CurrentLayout-default.dwlt
+Moo Moo Meadows/Library/CurrentLayout-default.dwlt
