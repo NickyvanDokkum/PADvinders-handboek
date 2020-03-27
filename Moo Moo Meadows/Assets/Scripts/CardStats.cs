@@ -5,15 +5,16 @@ using UnityEngine;
 public class CardStats : MonoBehaviour
 {
    [SerializeField] private int money, hapiness, grades, health, home;
-    // Start is called before the first frame update
-        void Start()
-    {
-        
-    }
+    
+    public int[] GetStats() {
+        int[] stats = new int[5];
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        stats[0] = money;
+        stats[1] = hapiness;
+        stats[2] = grades;
+        stats[3] = health;
+        stats[4] = home;
+
+        return stats;
     }
 }

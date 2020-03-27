@@ -25,13 +25,13 @@ public class EventController : MonoBehaviour
         _body.text = Event.body;
 
         //TODO: TALK TO THE CARD SYSTEM
-
         _parent.SetActive(true);
     }
 
-    public void PlayCard(/*TODO: PUT CARD HERE*/) {
+    public void PlayCard(CardStats cardStats) {
         //TODO: CHANGE STATS HERE DEPENDING ON WHAT CARD IS PLAYED
-
+        Debug.Log(cardStats.GetStats());
+        
         _parent.SetActive(false);
         _hub.SetActive(true);
     }
