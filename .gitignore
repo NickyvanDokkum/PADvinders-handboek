@@ -326,3 +326,12 @@ Moo Moo Meadows/Library/SourceAssetDB
 *.dll
 *.asset
 Moo Moo Meadows/Library/SourceAssetDB
+Moo Moo Meadows/Library/ArtifactDB
+*.dwlt
+Moo Moo Meadows/Library/LastSceneManagerSetup.txt
+*.log
+Moo Moo Meadows/Library/SourceAssetDB
+*.json
+Moo Moo Meadows/Library/SourceAssetDB
+Moo Moo Meadows/Library/SceneVisibilityState.asset
+Moo Moo Meadows/Library/LastSceneManagerSetup.txt
