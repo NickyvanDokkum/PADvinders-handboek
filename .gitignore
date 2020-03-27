@@ -318,3 +318,10 @@ Moo Moo Meadows/Library/CurrentLayout-default.dwlt
 Moo Moo Meadows/Library/CurrentLayout-default.dwlt
 Moo Moo Meadows/Library/CurrentLayout-default.dwlt
 Moo Moo Meadows/Library/SourceAssetDB
+*.dll
+*.cache
+*.json
+*.log
+Moo Moo Meadows/Library/ShaderCache/EditorEncounteredVariants
+*.dll
+*.graph

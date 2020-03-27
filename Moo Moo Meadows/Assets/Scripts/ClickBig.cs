@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClickBig : MonoBehaviour, IPointerClickHandler
+public class ClickBig : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
-    public void OnPointerClick(PointerEventData eventData)
+    public Vector2 middle;
+    GameObject gezoomdeKaart;
+    [SerializeField] public Transform hands;
+
+    public void OnPointerExit(PointerEventData eventData)
     {
-        this.transform.localScale = new Vector2(3, 3);
-       // this.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
+        Destroy(gezoomdeKaart);
     }
-    //public void OnPointerDown(PointerEventData eventData)
-    //{
-    //    Debug.Log(this.transform.lossyScale);
-    //    this.transform.localScale = new Vector3(3, 3);
 
-    //}
-
-    //public void OnPointerUp(PointerEventData eventData)
-    //{
-    //    Debug.Log(this.transform.lossyScale);
-    //    this.transform.localScale = new Vector3(1, 1);
-    //}
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        gezoomdeKaart = Instantiate(gameObject, new Vector2(Screen.width / 2, Screen.height / 2), transform.rotation, hands);
+        gezoomdeKaart.transform.localScale = new Vector2(2, 2);
+    }
 }
