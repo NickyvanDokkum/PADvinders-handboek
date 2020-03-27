@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a168f31dec80ab34fb3c311df5ff8ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 1
   hapiness: 0
   grades: 0
   health: 0
