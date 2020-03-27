@@ -11,10 +11,10 @@ public class EventController : MonoBehaviour
     private static EventController _eventController;
 
 
-    [SerializeField] private Text _title;
-    [SerializeField] private Text _body;
-    [SerializeField] private GameObject _parent;
-    [SerializeField] private GameObject _hub;
+    [SerializeField] private Text _title = null;
+    [SerializeField] private Text _body = null;
+    [SerializeField] private GameObject _parent = null;
+    [SerializeField] private GameObject _hub = null;
 
     private void Awake() {
         _eventController = this;

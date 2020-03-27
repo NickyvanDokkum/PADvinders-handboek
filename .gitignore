@@ -340,3 +340,4 @@ Moo Moo Meadows/Library/SourceAssetDB
 Moo Moo Meadows/Library/ScriptAssemblies/Assembly-CSharp.dll
 *.csproj
 *.asset
+*.cache
