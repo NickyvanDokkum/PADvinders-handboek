@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4889544717821415629}
   - component: {fileID: 5494619738378476289}
   - component: {fileID: 2944813008045172598}
+  - component: {fileID: -665043031756235431}
   m_Layer: 5
   m_Name: Vriendelijk
   m_TagString: Untagged
@@ -194,6 +195,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ba5b8495488a343a70aae28d5f83b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  middle: {x: 0, y: 0}
+  hands: {fileID: 0}
+--- !u!114 &-665043031756235431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237484966707406025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a168f31dec80ab34fb3c311df5ff8ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  hapiness: 2
+  grades: 0
+  health: 0
+  home: -1
 --- !u!1 &4614018311179272507
 GameObject:
   m_ObjectHideFlags: 0
