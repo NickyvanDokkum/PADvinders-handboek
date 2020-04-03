@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3587545454610890461}
   - component: {fileID: 4490771749081855249}
   - component: {fileID: 3963880908813206372}
+  - component: {fileID: -7046259503885908263}
   m_Layer: 5
   m_Name: Boos
   m_TagString: Untagged
@@ -195,6 +196,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ba5b8495488a343a70aae28d5f83b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  middle: {x: 0, y: 0}
+  hands: {fileID: 0}
+--- !u!114 &-7046259503885908263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6845324073690925785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a168f31dec80ab34fb3c311df5ff8ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  hapiness: 1
+  grades: 0
+  health: 0
+  home: -3
 --- !u!1 &9008256224016775933
 GameObject:
   m_ObjectHideFlags: 0

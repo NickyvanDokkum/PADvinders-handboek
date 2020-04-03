@@ -10,22 +10,24 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         Debug.Log("OnBeginDrag");
 
-        ReturnParent = this.transform.parent;
+        ReturnParent = this.transform.parent;   //slaat de huidige parent van de kaart op
         this.transform.SetParent(this.transform.parent.parent);
+        //turns off raycasts zodat de de kaart niet de muisfunctionaliteit blokkeert
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        //Debug.Log("OnDrag");
-
+        //zet de kaartpositie naar de muispositie
         this.transform.position = eventData.position;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("OnEndDrag");
+        //zet een nieuwe parent voor een kaart, als deze niet veranderd wordt in het 'dropzone' script wordt deze weer teruggezet naar de parent die eerder is opgeslagen
         this.transform.SetParent(ReturnParent);
+        //zet de raycasts weer aan zodat de kaart weer geselecteerd kan worden
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

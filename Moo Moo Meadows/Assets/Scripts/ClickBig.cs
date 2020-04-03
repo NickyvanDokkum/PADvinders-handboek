@@ -3,23 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClickBig : MonoBehaviour, IPointerClickHandler
+public class ClickBig : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
-    public void OnPointerClick(PointerEventData eventData)
+    public Vector2 middle;
+    GameObject gezoomdeKaart;
+    [SerializeField] public Transform hands;
+
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        this.transform.localScale = new Vector2(3, 3);
-       // this.transform.position = new Vector2(Screen.width / 2, Screen.height / 2);
+        gezoomdeKaart = Instantiate(gameObject, new Vector2(Screen.width / 2, Screen.height / 2), transform.rotation, hands);   //maakt een cloon van de kaart waar overheen wordt gehovert en zet zijn positie naar het midden van het scherm
+        gezoomdeKaart.transform.localScale = new Vector2(2, 2);     //vergroot de geclonede kaart en tekst zodat het goed leesbaar is
     }
-    //public void OnPointerDown(PointerEventData eventData)
-    //{
-    //    Debug.Log(this.transform.lossyScale);
-    //    this.transform.localScale = new Vector3(3, 3);
 
-    //}
-
-    //public void OnPointerUp(PointerEventData eventData)
-    //{
-    //    Debug.Log(this.transform.lossyScale);
-    //    this.transform.localScale = new Vector3(1, 1);
-    //}
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Destroy(gezoomdeKaart);     //verwijdert de geclonede kaart wanneer je niet meer over de basiskaart hovert
+    }
 }

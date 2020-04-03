@@ -342,3 +342,11 @@ Moo Moo Meadows/Library/ScriptAssemblies/Assembly-CSharp.dll
 *.asset
 *.cache
 *.asset
+*.dll
+*.cache
+*.json
+*.log
+Moo Moo Meadows/Library/ShaderCache/EditorEncounteredVariants
+*.dll
+*.graph
+*.dwlt
