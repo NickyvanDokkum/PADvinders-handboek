@@ -179,10 +179,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3237484966707406025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004b2214dc7b04c4ebaa4e6fde0abbe6, type: 3}
+  m_Script: {fileID: 11500000, guid: fbfc66120840f994e9266587662f5e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReturnParent: {fileID: 0}
+  money: 0
+  hapiness: 0
+  grades: 0
+  health: 0
+  home: 0
 --- !u!114 &2944813008045172598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3237484966707406025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6ba5b8495488a343a70aae28d5f83b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 62fa533d01ca85e42aae94ddc390f986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   middle: {x: 0, y: 0}
@@ -206,14 +210,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3237484966707406025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a168f31dec80ab34fb3c311df5ff8ad9, type: 3}
+  m_Script: {fileID: 11500000, guid: 659b59960a9914c4ea5b58171379ffd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
-  hapiness: 2
-  grades: 0
-  health: 0
-  home: -1
+  ReturnParent: {fileID: 0}
 --- !u!1 &4614018311179272507
 GameObject:
   m_ObjectHideFlags: 0

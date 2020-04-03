@@ -350,3 +350,7 @@ Moo Moo Meadows/Library/ShaderCache/EditorEncounteredVariants
 *.dll
 *.graph
 *.dwlt
+*.meta
+Moo Moo Meadows/Library/PackageCache/com.unity.collab-proxy@1.2.16/.npmignore
+*.md
+Moo Moo Meadows/Library/PackageCache/com.unity.collab-proxy@1.2.16/CHANGELOG.md.meta
