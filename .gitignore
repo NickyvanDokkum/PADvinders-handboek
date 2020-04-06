@@ -316,4 +316,41 @@ UnityExtension/**/manifest.json
 tests/IntegrationTests/IOTestsRepo/
 Moo Moo Meadows/Library/CurrentLayout-default.dwlt
 Moo Moo Meadows/Library/CurrentLayout-default.dwlt
+Moo Moo Meadows/Assembly-CSharp.csproj
+*.cache
+*.cache
+*.sln
+*.json
+Moo Moo Meadows/Library/SpriteAtlasDatabase.asset
+Moo Moo Meadows/Library/SourceAssetDB
+*.dll
+*.asset
+Moo Moo Meadows/Library/SourceAssetDB
 Moo Moo Meadows/Library/ArtifactDB
+*.dwlt
+Moo Moo Meadows/Library/LastSceneManagerSetup.txt
+*.log
+Moo Moo Meadows/Library/SourceAssetDB
+*.json
+Moo Moo Meadows/Library/SourceAssetDB
+Moo Moo Meadows/Library/SceneVisibilityState.asset
+Moo Moo Meadows/Library/LastSceneManagerSetup.txt
+Moo Moo Meadows/Library/CurrentLayout-default.dwlt
+Moo Moo Meadows/Library/SourceAssetDB
+Moo Moo Meadows/Library/ScriptAssemblies/Assembly-CSharp.dll
+*.csproj
+*.asset
+*.cache
+*.asset
+*.dll
+*.cache
+*.json
+*.log
+Moo Moo Meadows/Library/ShaderCache/EditorEncounteredVariants
+*.dll
+*.graph
+*.dwlt
+*.meta
+Moo Moo Meadows/Library/PackageCache/com.unity.collab-proxy@1.2.16/.npmignore
+*.md
+Moo Moo Meadows/Library/PackageCache/com.unity.collab-proxy@1.2.16/CHANGELOG.md.meta
