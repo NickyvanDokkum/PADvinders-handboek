@@ -55,30 +55,22 @@ public class Calendar : MonoBehaviour
                 if (plannedDay.day < currentDay)
                 {
                     plannedDays.Remove(plannedDay);
+
                 }
-
-                checkForEvent(plannedDay);
             }
 
         }
-        else
+
+        //check of er event zijn ingepland voor de volgende dag
+        foreach (dayInformation plannedDay in plannedDays)
         {
-            //check of er event zijn ingepland voor de volgende dag
-            foreach (dayInformation plannedDay in plannedDays)
+            if (plannedDay.day == currentDay)
             {
-                checkForEvent(plannedDay);
+                //begin het event
+                txt.text = "er is een event";
+
+                break;
             }
-        }
-    }
-
-    void checkForEvent(dayInformation plannedDay)
-    {
-        if (plannedDay.day == currentDay)
-        {
-            //begin het event
-            txt.text = "er is een event";
-
-            break;
         }
     }
 
