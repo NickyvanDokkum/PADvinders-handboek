@@ -14,7 +14,7 @@ public class Calendar : MonoBehaviour
         plannedDays = new List<DayInformation>();
     }
 
-    public void advanceDay()
+    public void AdvanceDay()
     //elke dag is er ook nog een structured event maar daar hoef ik niks mee te doen
     {
 
@@ -55,19 +55,19 @@ public class Calendar : MonoBehaviour
     }
 
     //nog niet getest
-    public List<DayInformation> getEventsForFourWeeks()
+    public List<DayInformation> GetEventsForFourWeeks()
     {
         List<DayInformation> events = new List<DayInformation>();
 
         //hoeveel dagen er in 4 weken zitten plus 1
         int days = 29;
 
-        if(days > plannedDays.Count())
+        if(days > plannedDays.Count)
         {
-            days = plannedDays.Count();
+            days = plannedDays.Count;
         }
 
-        for (int i = 0; index < plannedDays; index++)
+        for (int index = 0; index < days; index++)
         {
             events.Add(plannedDays[index]);
         }
@@ -75,12 +75,12 @@ public class Calendar : MonoBehaviour
         return events;
     }
 
-    public void planEvent(int day, test_event_data cardEvent)
+    public void PlanEvent(int day, test_event_data cardEvent)
     {
         plannedDays.Add(new DayInformation(day, cardEvent));
     }
 
-    class DayInformation
+    public class DayInformation
     {
         public int day;
         test_event_data cardEvent;
@@ -95,13 +95,13 @@ public class Calendar : MonoBehaviour
     }
 
     // dit is alleen om te testen
-    public void fillMonth(int startWeek)
+    public void FillMonth(int startWeek)
     {
         test_event_data cardEvent = new test_event_data();
 
-        for (int index = 0; indexndex < 28; index++)
+        for (int index = 0; index < 28; index++)
         {
-            planEvent(startWeek + index, cardEvent);
+            PlanEvent(startWeek + index, cardEvent);
         }
     }
 }
