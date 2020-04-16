@@ -13,11 +13,11 @@ public class OneChild : MonoBehaviour
 
     void Update()
     {
-        if (transform.childCount > maxChildAmount) //checkt of het max aantal children is bereikt
+        if (transform.childCount >= maxChildAmount) //checkt of het max aantal children is bereikt
         {
             for (int i = maxChildAmount; i < transform.childCount; i++)
             {
-               
+                Debug.Log(transform.GetChild(i));
                 transform.GetChild(i).SetParent(hand);  //wanneer max children is bereikt zet hij de parent naar de in Hand() geselecteerde parent
             }
         }

@@ -29,5 +29,11 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         this.transform.SetParent(ReturnParent);
         //zet de raycasts weer aan zodat de kaart weer geselecteerd kan worden
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+
+        if (ReturnParent.tag != "Player") {
+            Debug.Log(this.gameObject.name);
+            CardStats[] cardStats = GetComponentsInChildren<CardStats>();
+            EventController.eventController.PlayCard(cardStats);
+        }
     }
 }

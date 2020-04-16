@@ -363,6 +363,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &915467191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 915467192}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &915467192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915467191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 679.18445, y: 922.48193, z: -145.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1032134270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,6 +455,16 @@ PrefabInstance:
         Hoe
         reageer jij hierop?'
       objectReference: {fileID: 0}
+    - target: {fileID: 7632065841683771162, guid: 82ab68e7351f800409652e30f30d10cc,
+        type: 3}
+      propertyPath: _hub
+      value: 
+      objectReference: {fileID: 915467191}
+    - target: {fileID: 7632065841683771162, guid: 82ab68e7351f800409652e30f30d10cc,
+        type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 1737025543}
     - target: {fileID: 7632065841683771164, guid: 82ab68e7351f800409652e30f30d10cc,
         type: 3}
       propertyPath: m_Name
@@ -588,7 +628,7 @@ GameObject:
   - component: {fileID: 1051977918}
   m_Layer: 5
   m_Name: Hand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

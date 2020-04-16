@@ -28,9 +28,13 @@ public class EventController : MonoBehaviour
         _parent.SetActive(true);
     }
 
-    public void PlayCard(CardStats cardStats) {
+    public void PlayCard(CardStats[] cardStats) {
         //TODO: CHANGE STATS HERE DEPENDING ON WHAT CARD IS PLAYED
-        Debug.Log(cardStats.GetStats());
+        Debug.Log(cardStats.Length);
+        for (int i = 0; i < cardStats.Length; i++) {
+            Debug.Log("played: " + cardStats[i]);
+            //Debug.Log(cardStats[i].GetStats());
+        }
         
         _parent.SetActive(false);
         _hub.SetActive(true);
