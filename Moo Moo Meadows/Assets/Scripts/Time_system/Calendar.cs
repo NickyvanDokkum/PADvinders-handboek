@@ -5,13 +5,16 @@ using UnityEngine;
 public class Calendar : MonoBehaviour
 {
     List<DayInformation> plannedDays;
-    int currentDay;
+    public int currentDay;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         currentDay = 1;
         plannedDays = new List<DayInformation>();
+
+        // dit is om te testen
+        FillMonth(1);
     }
 
     public void AdvanceDay()
@@ -55,24 +58,17 @@ public class Calendar : MonoBehaviour
     }
 
     //nog niet getest
-    public List<DayInformation> GetEventsForFourWeeks()
+    public test_event_data GetEventForDay(int day)
     {
-        List<DayInformation> events = new List<DayInformation>();
-
-        //hoeveel dagen er in 4 weken zitten plus 1
-        int days = 29;
-
-        if(days > plannedDays.Count)
+        foreach (DayInformation plannedDay in plannedDays)
         {
-            days = plannedDays.Count;
+            if(plannedDay.day == day)
+            {
+                return plannedDay.cardEvent;
+            }
         }
-
-        for (int index = 0; index < days; index++)
-        {
-            events.Add(plannedDays[index]);
-        }
-
-        return events;
+        
+        return null;
     }
 
     public void PlanEvent(int day, test_event_data cardEvent)
@@ -80,10 +76,10 @@ public class Calendar : MonoBehaviour
         plannedDays.Add(new DayInformation(day, cardEvent));
     }
 
-    public class DayInformation
+    class DayInformation
     {
         public int day;
-        test_event_data cardEvent;
+        public test_event_data cardEvent;
 
         // hier moet ook het event worden opgeslagen
 
