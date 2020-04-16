@@ -5,14 +5,14 @@ using UnityEngine.EventSystems;
 
 public class ClickBig : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
-    public Vector2 middle;
+    private Vector2 middle;
     GameObject gezoomdeKaart;
-    [SerializeField] public Transform hands;
+    [SerializeField] public Transform kaartscherm;
 
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        gezoomdeKaart = Instantiate(gameObject, new Vector2(Screen.width / 2, Screen.height / 2), transform.rotation, hands);   //maakt een cloon van de kaart waar overheen wordt gehovert en zet zijn positie naar het midden van het scherm
+        gezoomdeKaart = Instantiate(gameObject, new Vector2(Screen.width / 2, Screen.height / 2), transform.rotation, kaartscherm);   //maakt een cloon van de kaart waar overheen wordt gehovert en zet zijn positie naar het midden van het scherm
         gezoomdeKaart.transform.localScale = new Vector2(2, 2);     //vergroot de geclonede kaart en tekst zodat het goed leesbaar is
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public Transform ReturnParent = null;
+    [System.NonSerialized] public Transform ReturnParent = null;
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("OnBeginDrag");
