@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FillStatusBar: MonoBehaviour
 {
-    public float grades;
+    public float currentStats;
     public float maxStats;
     public Image fillimage;
     private Slider slider;
@@ -16,8 +16,8 @@ public class FillStatusBar: MonoBehaviour
         slider = GetComponent<Slider>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void ChangeSlider()
     {
         if (slider.value <= slider.minValue)
         {
@@ -29,7 +29,19 @@ public class FillStatusBar: MonoBehaviour
             fillimage.enabled = true;
         }
 
-        float fillValue = grades / maxStats;
+        float fillValue = currentStats / maxStats;
         slider.value = fillValue; 
+    }
+
+    public void SetStat(int stat)
+    {
+        currentStats = stat;
+        ChangeSlider();
+    }
+
+    public void AddValue(int stat)
+    {
+        currentStats += stat;
+        ChangeSlider();
     }
 }
