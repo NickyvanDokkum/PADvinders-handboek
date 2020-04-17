@@ -9,7 +9,7 @@ public class test_event_data : MonoBehaviour
     public string body;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         title = "event 1";
         body = "dit is event 1...";

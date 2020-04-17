@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Calendar : MonoBehaviour
 {
     List<DayInformation> plannedDays;
     public int currentDay;
+
+    // hierdoor kunnen de scripten van de weeken meeluisteren of er een week voorbij is
+    public UnityEvent advanceWeek;
 
     // Start is called before the first frame update
     public void Start()
@@ -31,6 +35,7 @@ public class Calendar : MonoBehaviour
             //verwijder de dingen uit de list van de vorige week
             for (int index = plannedDays.Count - 1; index >= 0; index--)
             {
+                advanceWeek.Invoke();
                 DayInformation plannedDay = plannedDays[index];
 
                 if (plannedDay.day < currentDay)
@@ -93,11 +98,15 @@ public class Calendar : MonoBehaviour
     // dit is alleen om te testen
     public void FillMonth(int startWeek)
     {
-        test_event_data cardEvent = new test_event_data();
-
+        test_event_data testData = this.GetComponent<test_event_data>();
         for (int index = 0; index < 28; index++)
         {
-            PlanEvent(startWeek + index, cardEvent);
+            PlanEvent(startWeek + index, testData);
         }
+    }
+
+    public void Update()
+    {
+        AdvanceDay();
     }
 }
