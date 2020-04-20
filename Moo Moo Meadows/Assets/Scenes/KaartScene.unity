@@ -400,71 +400,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737025547}
     m_Modifications:
-    - target: {fileID: 7632065840750122282, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065840750122282, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1034.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065840750122282, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000011444
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065840750122282, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 678.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065840982420134, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065841048581738, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -85.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065841048581738, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 506.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065841048581738, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000022888
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065841048581738, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1034.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065841048581740, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_Text
-      value: 'De huisbaas komt binnen lopen zonder dat jij daar toestemming voor
-        hebt gegeven. Hij zegt dat hij alleen maar even iets wilt controleren.
-
-
-        Hoe
-        reageer jij hierop?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065841683771162, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: _hub
-      value: 
-      objectReference: {fileID: 915467191}
     - target: {fileID: 7632065841683771162, guid: 82ab68e7351f800409652e30f30d10cc,
         type: 3}
       propertyPath: _parent
       value: 
       objectReference: {fileID: 1737025543}
+    - target: {fileID: 7632065841683771162, guid: 82ab68e7351f800409652e30f30d10cc,
+        type: 3}
+      propertyPath: _hub
+      value: 
+      objectReference: {fileID: 915467191}
     - target: {fileID: 7632065841683771164, guid: 82ab68e7351f800409652e30f30d10cc,
         type: 3}
       propertyPath: m_Name
@@ -574,36 +519,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065842110426258, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 264.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065842110426258, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065842110426258, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065842110426258, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1034.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065842110426260, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_Text
-      value: Ongevraagd bezoek
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632065842110426260, guid: 82ab68e7351f800409652e30f30d10cc,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82ab68e7351f800409652e30f30d10cc, type: 3}
