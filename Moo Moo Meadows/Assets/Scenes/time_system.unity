@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 15740962}
+  - component: {fileID: 15740963}
   m_Layer: 5
   m_Name: Week 3
   m_TagString: Untagged
@@ -158,6 +159,18 @@ RectTransform:
   m_AnchoredPosition: {x: -31.7, y: -608.2}
   m_SizeDelta: {x: 500.8, y: 126.1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &15740963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15740961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &25992515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262922990}
+  - component: {fileID: 262922991}
   m_Layer: 5
   m_Name: Week 4
   m_TagString: Untagged
@@ -1393,6 +1407,18 @@ RectTransform:
   m_AnchoredPosition: {x: -31.7, y: -982}
   m_SizeDelta: {x: 500.8, y: 126.1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &262922991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262922989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &265891832
 GameObject:
   m_ObjectHideFlags: 0
@@ -8188,6 +8214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1045827166}
+  - component: {fileID: 1045827167}
   m_Layer: 5
   m_Name: Week 2
   m_TagString: Untagged
@@ -8216,6 +8243,18 @@ RectTransform:
   m_AnchoredPosition: {x: -31.7, y: -245.20001}
   m_SizeDelta: {x: 500.8, y: 126.1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1045827167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045827165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1068278953
 GameObject:
   m_ObjectHideFlags: 0
@@ -14663,3 +14702,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentDay: 0
+  advanceWeek:
+    m_PersistentCalls:
+      m_Calls: []

@@ -7,9 +7,8 @@ using UnityEngine.Events;
 public class Week : MonoBehaviour
 {
 
-    int thisWeek;
+    public int thisWeek;
     Text weekText;
-    Calendar calendar;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +20,8 @@ public class Week : MonoBehaviour
         thisWeek = int.Parse(weekText.text.Remove(0,5));
 
 
+        Calendar calendar;
         calendar = this.GetComponentInParent<Calendar>();
-
 
         //hierdoor luistert hij of er een week voorbij is
         calendar.advanceWeek.AddListener(advanceWeek);
