@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisWeek: 0
 --- !u!1 &25992515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisWeek: 0
 --- !u!1 &265891832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,6 +4025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisWeek: 0
 --- !u!1 &557576119
 GameObject:
   m_ObjectHideFlags: 0
@@ -8255,6 +8258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401f324f6445e9541b504583af6b7b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisWeek: 0
 --- !u!1 &1068278953
 GameObject:
   m_ObjectHideFlags: 0
@@ -14702,6 +14706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentDay: 0
+  todaysEvent: {fileID: 0}
   advanceWeek:
     m_PersistentCalls:
       m_Calls: []

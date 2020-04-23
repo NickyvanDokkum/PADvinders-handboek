@@ -21,6 +21,7 @@ public class Calendar : MonoBehaviour
 
         // dit is om te testen
         FillMonth(1);
+        FillMonth(28);
     }
 
     public void AdvanceDay()
@@ -30,11 +31,12 @@ public class Calendar : MonoBehaviour
         currentDay++;
 
         //check of de week is afgelopen om vervolgens de huur te betalen
-        if (currentDay / 8 == currentDay % 8)
+        if (0 == currentDay % 8)
         {
             advanceWeek.Invoke();
             //betaal de huur
 
+            int deletedDays = 0;
             //verwijder de dingen uit de list van de vorige week
             for (int index = plannedDays.Count - 1; index >= 0; index--)
             {
@@ -42,7 +44,13 @@ public class Calendar : MonoBehaviour
 
                 if (plannedDay.day < currentDay)
                 {
+                    deletedDays++;
                     plannedDays.Remove(plannedDay);
+
+                    if(deletedDays == 7)
+                    {
+                        break;
+                    }
 
                 }
             }
