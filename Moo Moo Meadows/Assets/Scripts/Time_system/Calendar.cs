@@ -7,6 +7,7 @@ public class Calendar : MonoBehaviour
 {
     List<DayInformation> plannedDays;
     public int currentDay;
+    public test_event_data todaysEvent;
 
     // hierdoor kunnen de scripten van de weeken meeluisteren of er een week voorbij is
     public UnityEvent advanceWeek;
@@ -52,12 +53,13 @@ public class Calendar : MonoBehaviour
         {
             if (plannedDay.day == currentDay)
             {
-                //begin het event
+                todaysEvent = plannedDay.cardEvent;
                 break;
             }
             else
             {
                 // er is geen event geplanned voor vandaag
+                todaysEvent = null;
             }
         }
     }
