@@ -17,31 +17,23 @@ public class FillStatusBar: MonoBehaviour
     }
 
 
-    void ChangeSlider()
+    void Update()
     {
-        if (slider.value <= slider.minValue)
-        {
-            fillimage.enabled = false;
-        }
-
-        if (slider.value > slider.minValue && !fillimage.enabled)
-        {
-            fillimage.enabled = true;
-        }
-
         float fillValue = currentStats / maxStats;
         slider.value = fillValue; 
     }
 
+    
     public void SetStat(int stat)
     {
         currentStats = stat;
-        ChangeSlider();
+        Update();
     }
 
     public void AddValue(int stat)
     {
         currentStats += stat;
-        ChangeSlider();
+        Update();
     }
+    
 }
