@@ -4,16 +4,15 @@ using UnityEngine.UI;
 public class KaartInfo : MonoBehaviour
 {
     //kaart info
-    private string[] kaarten = new string[] { "test1", "test2", "test3", "test4", "test5" };
+    private string[] kaarten = new string[] { "kaart1", "kaart2", "kaart3", "kaart4", "kaart5" };
     public int kaartID;
     [SerializeField] private Text titel;
     [SerializeField] private Text omschrijving;
     public static string eventnaam;
-    string eventdinges;
 
-    public static int GetCardAmount()
+    public static int GetCardAmount() //functie die ervoor zorgt dat de array van kaarten altijd de juiste hoeveelheid heeft
     {
-        switch (eventnaam) 
+        switch (eventnaam)
         {
             case "aaa":
                 return 2;
@@ -22,20 +21,20 @@ public class KaartInfo : MonoBehaviour
         }
 
         return 0;
-    } 
-    public void KaartGegevens(string kaartnaam) //zorgt ervoor dat de text op kaarten wordt veranderd
+    }
+    public void KaartGegevens(string kaartnaam) //zorgt er dmv switch statements voor dat de text op kaarten wordt veranderd
     {
         switch (eventnaam)
         {
             case "aaa":
-                
+
                 switch (kaartnaam)
                 {
-                    case "test1":
+                    case "kaart1":
                         titel.text = "111111111";
                         omschrijving.text = "1111111111111";
                         break;
-                    case "test2":
+                    case "kaart2":
                         titel.text = "22222";
                         omschrijving.text = "6969696969696969";
                         break;
@@ -47,19 +46,19 @@ public class KaartInfo : MonoBehaviour
             case "bbb":
                 switch (kaartnaam)
                 {
-                    case "test1":
+                    case "kaart1":
                         titel.text = "123123";
                         omschrijving.text = "11111111231232111111";
                         break;
-                    case "test2":
+                    case "kaart2":
                         titel.text = "1231223";
                         omschrijving.text = "12312";
                         break;
-                    case "test3":
+                    case "kaart3":
                         titel.text = "123asgdsagd123";
                         omschrijving.text = "11111111231asdgd232111111";
                         break;
-                    case "test4":
+                    case "kaart4":
                         titel.text = "123sadggdsa1223";
                         omschrijving.text = "sadgsadg";
                         break;
