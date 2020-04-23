@@ -58,19 +58,22 @@ public class Calendar : MonoBehaviour
         }
 
         //check of er event zijn ingepland voor de volgende dag
+        bool todayIsEvent = false;
         foreach (DayInformation plannedDay in plannedDays)
         {
+
             if (plannedDay.day == currentDay)
             {
                 todaysEvent = plannedDay.cardEvent;
+                todayIsEvent = true;
                 break;
             }
-            else
-            {
-                // er is geen event geplanned voor vandaag
-                todaysEvent = null;
-            }
         }
+        if (!todayIsEvent)
+        {
+            todaysEvent = null;
+        }
+
     }
 
     //nog niet getest
