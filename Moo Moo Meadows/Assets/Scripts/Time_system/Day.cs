@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 public class Day : MonoBehaviour
 {
-    test_event_data eventData;
+    public test_event_data eventData;
     int DayOfWeek;
     Calendar calendar;
     Week week;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         calendar = this.GetComponentInParent<Calendar>();
         week = this.GetComponentInParent<Week>();
 
         //hierdoor luistert hij of er een week voorbij is
-        calendar.advanceWeek.AddListener(advanceWeek);
+        calendar.advanceWeek.AddListener(AdvanceWeek);
 
 
-        string dayText = transform.Find("Text").GetComponent<Text>().text;
+        string dayText = transform.Find("Text").GetComponent<Text>().text.Trim();
         switch (dayText)
         {
             case ("Monday"):
@@ -47,7 +47,7 @@ public class Day : MonoBehaviour
         }
     }
 
-    void advanceWeek()
+    void AdvanceWeek()
     {
         eventData = calendar.GetEventForDay(week.thisWeek + DayOfWeek);
     }

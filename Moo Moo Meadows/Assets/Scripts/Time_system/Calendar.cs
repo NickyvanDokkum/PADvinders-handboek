@@ -118,9 +118,4 @@ public class Calendar : MonoBehaviour
             PlanEvent(startWeek + index, testData);
         }
     }
-
-    public void Update()
-    {
-        AdvanceDay();
-    }
 }
