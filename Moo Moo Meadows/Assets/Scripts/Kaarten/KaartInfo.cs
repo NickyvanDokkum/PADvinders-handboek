@@ -4,18 +4,31 @@ using UnityEngine.UI;
 public class KaartInfo : MonoBehaviour
 {
     //kaart info
-    private string[] kaarten = new string[] { "test1", "test2" };
+    private string[] kaarten = new string[] { "test1", "test2", "test3", "test4", "test5" };
     public int kaartID;
     [SerializeField] private Text titel;
     [SerializeField] private Text omschrijving;
     public static string eventnaam;
     string eventdinges;
 
+    public static int GetCardAmount()
+    {
+        switch (eventnaam) 
+        {
+            case "aaa":
+                return 2;
+            case "bbb":
+                return 4;
+        }
+
+        return 0;
+    } 
     public void KaartGegevens(string kaartnaam) //zorgt ervoor dat de text op kaarten wordt veranderd
     {
         switch (eventnaam)
         {
             case "aaa":
+                
                 switch (kaartnaam)
                 {
                     case "test1":
@@ -41,6 +54,14 @@ public class KaartInfo : MonoBehaviour
                     case "test2":
                         titel.text = "1231223";
                         omschrijving.text = "12312";
+                        break;
+                    case "test3":
+                        titel.text = "123asgdsagd123";
+                        omschrijving.text = "11111111231asdgd232111111";
+                        break;
+                    case "test4":
+                        titel.text = "123sadggdsa1223";
+                        omschrijving.text = "sadgsadg";
                         break;
                 }
                 break;
