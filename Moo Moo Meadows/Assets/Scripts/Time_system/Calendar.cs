@@ -31,9 +31,8 @@ public class Calendar : MonoBehaviour
         currentDay++;
 
         //check of de week is afgelopen om vervolgens de huur te betalen
-        if (0 == currentDay % 8)
+        if (currentDay % 7 == 1)
         {
-            advanceWeek.Invoke();
             //betaal de huur
 
             int deletedDays = 0;
@@ -55,6 +54,8 @@ public class Calendar : MonoBehaviour
                 }
             }
 
+
+            advanceWeek.Invoke();
         }
 
         //check of er event zijn ingepland voor de volgende dag

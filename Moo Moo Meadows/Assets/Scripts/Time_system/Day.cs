@@ -49,6 +49,6 @@ public class Day : MonoBehaviour
 
     void AdvanceWeek()
     {
-        eventData = calendar.GetEventForDay(week.thisWeek + DayOfWeek);
+        eventData = calendar.GetEventForDay((week.thisWeek*7) + DayOfWeek);
     }
 }
