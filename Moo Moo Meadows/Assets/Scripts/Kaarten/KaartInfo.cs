@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class KaartInfo : MonoBehaviour
@@ -10,18 +8,42 @@ public class KaartInfo : MonoBehaviour
     public int kaartID;
     [SerializeField] private Text titel;
     [SerializeField] private Text omschrijving;
+    public static string eventnaam;
+    string eventdinges;
 
-    void KaartGegevens(string kaartnaam) //zorgt ervoor dat de text op kaarten wordt veranderd
+    public void KaartGegevens(string kaartnaam) //zorgt ervoor dat de text op kaarten wordt veranderd
     {
-        if (kaartnaam == "test1")
+        switch (eventnaam)
         {
-            titel.text = "111111";
-            omschrijving.text = "1111111111111";
+            case "aaa":
+                switch (kaartnaam)
+                {
+                    case "test1":
+                        titel.text = "111111111";
+                        omschrijving.text = "1111111111111";
+                        break;
+                    case "test2":
+                        titel.text = "22222";
+                        omschrijving.text = "6969696969696969";
+                        break;
+                }
+                break;
         }
-        if (kaartnaam == "test2")
+        switch (eventnaam)
         {
-            titel.text = "22222";
-            omschrijving.text = "6969696969696969";
+            case "bbb":
+                switch (kaartnaam)
+                {
+                    case "test1":
+                        titel.text = "123123";
+                        omschrijving.text = "11111111231232111111";
+                        break;
+                    case "test2":
+                        titel.text = "1231223";
+                        omschrijving.text = "12312";
+                        break;
+                }
+                break;
         }
     }
 
