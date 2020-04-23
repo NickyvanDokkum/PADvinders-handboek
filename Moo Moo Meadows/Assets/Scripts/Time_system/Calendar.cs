@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -31,12 +32,12 @@ public class Calendar : MonoBehaviour
         //check of de week is afgelopen om vervolgens de huur te betalen
         if (currentDay / 8 == currentDay % 8)
         {
+            advanceWeek.Invoke();
             //betaal de huur
 
             //verwijder de dingen uit de list van de vorige week
             for (int index = plannedDays.Count - 1; index >= 0; index--)
             {
-                advanceWeek.Invoke();
                 DayInformation plannedDay = plannedDays[index];
 
                 if (plannedDay.day < currentDay)
