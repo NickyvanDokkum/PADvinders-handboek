@@ -7043,7 +7043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acb1a0b6e528d240be435518fef2dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStats: 0
+  currentStats: 100
   maxStats: 100
   fillimage: {fileID: 61864974}
 --- !u!1 &1087706591
@@ -8485,7 +8485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acb1a0b6e528d240be435518fef2dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStats: 20
+  currentStats: 83
   maxStats: 100
   fillimage: {fileID: 781827146}
 --- !u!1 &1356923423
