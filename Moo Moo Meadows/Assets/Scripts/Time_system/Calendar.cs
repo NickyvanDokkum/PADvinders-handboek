@@ -33,7 +33,7 @@ public class Calendar : MonoBehaviour
         //check of de week is afgelopen om vervolgens de huur te betalen
         if (currentDay % 7 == 1)
         {
-            //betaal de huur
+            //betaal de huur (nog niet gemaakt)
 
             int deletedDays = 0;
             //verwijder de dingen uit de list van de vorige week
@@ -77,7 +77,6 @@ public class Calendar : MonoBehaviour
 
     }
 
-    //nog niet getest
     public test_event_data GetEventForDay(int day)
     {
         foreach (DayInformation plannedDay in plannedDays)
@@ -87,7 +86,7 @@ public class Calendar : MonoBehaviour
                 return plannedDay.cardEvent;
             }
         }
-        
+
         return null;
     }
 
@@ -113,7 +112,7 @@ public class Calendar : MonoBehaviour
     // dit is alleen om te testen
     public void FillMonth(int startWeek)
     {
-        test_event_data testData = this.GetComponent<test_event_data>();
+        test_event_data testData = this.GetComponentInChildren<test_event_data>();
         for (int index = 0; index < 28; index++)
         {
             PlanEvent(startWeek + index, testData);
