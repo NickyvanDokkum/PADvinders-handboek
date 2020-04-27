@@ -165,8 +165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 66}
-  m_SizeDelta: {x: 837.7, y: 1264.4}
+  m_AnchoredPosition: {x: 0, y: 0.000011444}
+  m_SizeDelta: {x: 1034.6, y: 678.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7632065840750122280
 CanvasRenderer:
@@ -219,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7632065840982420135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -274,8 +274,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9, y: -112.900024}
-  m_SizeDelta: {x: 749.8, y: 1038.6}
+  m_AnchoredPosition: {x: 0.000022888, y: -85.8}
+  m_SizeDelta: {x: 1034.6, y: 506.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7632065841048581741
 CanvasRenderer:
@@ -316,17 +316,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat
-    porta ligula. Donec fermentum dapibus ex, eu sodales enim finibus ut. Phasellus
-    faucibus, elit a dapibus pharetra, augue urna posuere velit, eget gravida ante
-    elit sed ex. Phasellus in orci vitae ante pharetra molestie id ut magna. Sed
-    et justo eget arcu dapibus luctus sit amet vel enim. Cras tortor ligula, convallis
-    eu gravida in, aliquet et ligula. Suspendisse potenti. Nulla facilisi. Proin
-    auctor ipsum vitae tortor sagittis auctor. Nullam nec diam sed justo volutpat
-    fringilla. Etiam ullamcorper bibendum elit, vel luctus purus vulputate in. Cras
-    sollicitudin nisi vel consequat fermentum. Curabitur in ex ultricies, dictum
-    nibh vitae, aliquet nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. '
+  m_Text: 'De huisbaas komt binnen lopen zonder dat jij daar toestemming voor hebt
+    gegeven. Hij zegt dat hij alleen maar even iets wilt controleren.
+
+
+    Hoe reageer
+    jij hierop?'
 --- !u!1 &7632065841683771164
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,8 +374,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: {fileID: 7632065842110426260}
   _body: {fileID: 7632065841048581740}
-  _parent: {fileID: 7632065841683771164}
+  _parent: {fileID: 0}
   _hub: {fileID: 0}
+  money: {fileID: 0}
+  hapiness: {fileID: 0}
+  grades: {fileID: 0}
+  health: {fileID: 0}
+  home: {fileID: 0}
 --- !u!1 &7632065842110426263
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,8 +415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 494}
-  m_SizeDelta: {x: 746, y: 212.3}
+  m_AnchoredPosition: {x: 0, y: 264.15}
+  m_SizeDelta: {x: 1034.6, y: 150.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7632065842110426261
 CanvasRenderer:
@@ -446,7 +446,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 124
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TITLE
+  m_Text: Ongevraagd bezoek
 --- !u!1 &7632065842262613320
 GameObject:
   m_ObjectHideFlags: 0

@@ -354,3 +354,13 @@ Moo Moo Meadows/Library/ShaderCache/EditorEncounteredVariants
 Moo Moo Meadows/Library/PackageCache/com.unity.collab-proxy@1.2.16/.npmignore
 *.md
 Moo Moo Meadows/Library/PackageCache/com.unity.collab-proxy@1.2.16/CHANGELOG.md.meta
+Moo Moo Meadows/Library/ArtifactDB
+Moo Moo Meadows/Library/SourceAssetDB
+*.asset
+*.dll
+*.stamp
+*.graph
+Moo Moo Meadows/Library/ScriptMapper
+Moo Moo Meadows/Library/ShaderCache/EditorEncounteredVariants
+*.log
+*.txt

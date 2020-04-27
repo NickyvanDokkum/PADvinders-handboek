@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EventController : MonoBehaviour
-{
+public class EventController : MonoBehaviour {
     public static EventController eventController {
         get { return _eventController; }
     }
@@ -15,6 +14,12 @@ public class EventController : MonoBehaviour
     [SerializeField] private Text _body = null;
     [SerializeField] private GameObject _parent = null;
     [SerializeField] private GameObject _hub = null;
+
+    [SerializeField] private moneyValue money;
+    [SerializeField] private FillStatusBar hapiness;
+    [SerializeField] private FillStatusBar grades;
+    [SerializeField] private FillStatusBar health;
+    [SerializeField] private FillStatusBar home;
 
     private void Awake() {
         _eventController = this;
@@ -28,10 +33,18 @@ public class EventController : MonoBehaviour
         _parent.SetActive(true);
     }
 
-    public void PlayCard(CardStats cardStats) {
+    public void PlayCard(CardStats[] cardStats) {
         //TODO: CHANGE STATS HERE DEPENDING ON WHAT CARD IS PLAYED
-        Debug.Log(cardStats.GetStats());
-        
+        Debug.Log(cardStats.Length);
+        for (int i = 0; i < cardStats.Length; i++) {
+            int[] stats = cardStats[i].GetStats();
+            money.AddValue(stats[0]);
+            hapiness.AddValue(stats[1]);
+            grades.AddValue(stats[2]);
+            health.AddValue(stats[3]);
+            home.AddValue(stats[4]);
+        }
+
         _parent.SetActive(false);
         _hub.SetActive(true);
     }
