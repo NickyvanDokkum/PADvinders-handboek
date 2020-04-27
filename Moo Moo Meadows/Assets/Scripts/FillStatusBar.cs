@@ -14,34 +14,28 @@ public class FillStatusBar: MonoBehaviour
     void Start()
     {
         slider = GetComponent<Slider>();
+        ChangeValue();
     }
 
-
-    void ChangeSlider()
+    //Deze funtie wordt aangeroepen als de stats veranderen en zorgt ervoor dat de verandering in de slider komt
+    void ChangeValue()
     {
-        if (slider.value <= slider.minValue)
-        {
-            fillimage.enabled = false;
-        }
-
-        if (slider.value > slider.minValue && !fillimage.enabled)
-        {
-            fillimage.enabled = true;
-        }
-
         float fillValue = currentStats / maxStats;
         slider.value = fillValue; 
     }
 
+    //Functie wordt gebruikt om de stats te veranderen
     public void SetStat(int stat)
     {
         currentStats = stat;
-        ChangeSlider();
+        ChangeValue();
     }
 
+    //Functie wordt gebruikt om de stats te vergroten
     public void AddValue(int stat)
     {
         currentStats += stat;
-        ChangeSlider();
+        ChangeValue();
     }
+    
 }
