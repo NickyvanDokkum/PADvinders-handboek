@@ -21,8 +21,9 @@ public class EventController : MonoBehaviour {
     [SerializeField] private FillStatusBar health;
     [SerializeField] private FillStatusBar home;
 
-    private void Awake() {
+    private void Start() {
         _eventController = this;
+        this.enabled = false;
     }
 
     public void CreateEvent(Event Event) {
@@ -31,6 +32,7 @@ public class EventController : MonoBehaviour {
 
         //TODO: TALK TO THE CARD SYSTEM
         _parent.SetActive(true);
+        gameObject.SetActive(true);
     }
 
     public void PlayCard(CardStats[] cardStats) {
@@ -47,5 +49,6 @@ public class EventController : MonoBehaviour {
 
         _parent.SetActive(false);
         _hub.SetActive(true);
+        gameObject.SetActive(false);
     }
 }

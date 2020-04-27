@@ -9,7 +9,7 @@ public class OneChild : MonoBehaviour
 
     public void Hand() {
         hand = transform.parent.parent.Find("Hand");    //zorgt voor een optie in unity waar je de returnparent kan kiezen wanneer de max children is bereikt
-            }
+    }
 
     void Update()
     {
