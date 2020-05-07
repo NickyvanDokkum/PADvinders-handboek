@@ -10,17 +10,29 @@ public class FillStatusBar: MonoBehaviour
     public Image fillimage;
     private Slider slider;
 
+    private bool started = false;
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
+
         slider = GetComponent<Slider>();
+        Debug.Log("slider start" + slider);
         ChangeValue();
     }
 
     //Deze funtie wordt aangeroepen als de stats veranderen en zorgt ervoor dat de verandering in de slider komt
     void ChangeValue()
     {
+        if (!started)
+        {
+            started = !started;
+            Start();
+        }
+
         float fillValue = currentStats / maxStats;
+        Debug.Log("slider" + slider);
+        Debug.Log("slider value" + slider.value);
         slider.value = fillValue; 
     }
 
